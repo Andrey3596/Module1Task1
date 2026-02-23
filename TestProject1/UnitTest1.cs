@@ -13,12 +13,36 @@ namespace TestProject1.Tests
     public class LogicTests
     {
         [TestMethod()]
-        public void CompareTest()
+        public void MaxStart()
         {
-            var num = 123;
+            var num = 321;
             var answer = Logic.Compare(num);
             
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3,answer);
+        }
+        [TestMethod()]
+        public void MaxMiddle()
+        {
+            var num = 132;
+            var answer = Logic.Compare(num);
+
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
+        }
+        [TestMethod()]
+        public void MaxEnd()
+        {
+            var num = 123;
+            var answer = Logic.Compare(num);
+
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
+        }
+        [TestMethod()]
+        public void Equally()
+        {
+            var num = 555;
+            var answer = Logic.Compare(num);
+
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(5, answer);
         }
     }
 }
