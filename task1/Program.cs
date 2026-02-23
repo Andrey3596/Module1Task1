@@ -1,4 +1,4 @@
-﻿namespace FirstApp
+﻿namespace task1
 {
 
     public class Logic
