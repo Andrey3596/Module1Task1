@@ -1,5 +1,17 @@
 ﻿namespace FirstApp
 {
+
+    public class Logic
+    {
+        public static int Compare(int num)
+        {
+            returm num;
+        }
+    }
+
+
+
+
     class Program
     {
         static void Main(string[] args)
