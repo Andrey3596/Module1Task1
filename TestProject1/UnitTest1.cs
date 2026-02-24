@@ -16,7 +16,7 @@ namespace TestProject1.Tests
         public void MaxDigitStart()
         {
             var threeDigitNumber = 321;
-            var answer = Logic.Compare(threeDigitNumber);
+            var answer = Logic.CompareDigit(threeDigitNumber);
             
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3,answer);
         }
@@ -24,7 +24,7 @@ namespace TestProject1.Tests
         public void MaxDigitMiddle()
         {
             var threeDigitNumber = 132;
-            var answer = Logic.Compare(threeDigitNumber);
+            var answer = Logic.CompareDigit(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
         }
@@ -32,7 +32,7 @@ namespace TestProject1.Tests
         public void MaxDigitEnd()
         {
             var threeDigitNumber = 123;
-            var answer = Logic.Compare(threeDigitNumber);
+            var answer = Logic.CompareDigit(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
         }
@@ -40,7 +40,7 @@ namespace TestProject1.Tests
         public void DigitEqually()
         {
             var threeDigitNumber = 555;
-            var answer = Logic.Compare(threeDigitNumber);
+            var answer = Logic.CompareDigit(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(5, answer);
         }

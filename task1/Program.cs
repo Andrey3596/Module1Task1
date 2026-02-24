@@ -5,7 +5,7 @@ namespace task1
 
     public class Logic
     {
-        public static int Compare(int threeDigitNumber)
+        public static int CompareDigit(int threeDigitNumber)
         {
             int firstDigit = threeDigitNumber / 100;
             int secondDigit = (threeDigitNumber - firstDigit * 100) / 10;
