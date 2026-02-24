@@ -13,34 +13,34 @@ namespace TestProject1.Tests
     public class LogicTests
     {
         [TestMethod()]
-        public void MaxStart()
+        public void MaxDigitStart()
         {
-            var num = 321;
-            var answer = Logic.Compare(num);
+            var threeDigitNumber = 321;
+            var answer = Logic.Compare(threeDigitNumber);
             
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3,answer);
         }
         [TestMethod()]
-        public void MaxMiddle()
+        public void MaxDigitMiddle()
         {
-            var num = 132;
-            var answer = Logic.Compare(num);
+            var threeDigitNumber = 132;
+            var answer = Logic.Compare(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
         }
         [TestMethod()]
-        public void MaxEnd()
+        public void MaxDigitEnd()
         {
-            var num = 123;
-            var answer = Logic.Compare(num);
+            var threeDigitNumber = 123;
+            var answer = Logic.Compare(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(3, answer);
         }
         [TestMethod()]
-        public void Equally()
+        public void DigitEqually()
         {
-            var num = 555;
-            var answer = Logic.Compare(num);
+            var threeDigitNumber = 555;
+            var answer = Logic.Compare(threeDigitNumber);
 
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(5, answer);
         }

@@ -1,25 +1,27 @@
-﻿namespace task1
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace task1
 {
 
     public class Logic
     {
-        public static int Compare(int num)
+        public static int Compare(int threeDigitNumber)
         {
-            int x = num / 100;
-            int y = (num - x * 100) / 10;
-            int z = (num - x * 100 - y * 10);
+            int firstDigit = threeDigitNumber / 100;
+            int secondDigit = (threeDigitNumber - firstDigit * 100) / 10;
+            int thirdDigit = (threeDigitNumber - firstDigit * 100 - secondDigit * 10);
             
-            if (x > y && x > z)
+            if (firstDigit > secondDigit && firstDigit > thirdDigit)
             {
-                return x;
+                return firstDigit;
             }
-            else if (y > z && y > x)
+            else if (secondDigit > thirdDigit && secondDigit > firstDigit)
             {
-                return y;
+                return secondDigit;
             }
             else
             {
-                return z;
+                return thirdDigit;
             }
 
         }
@@ -30,9 +32,9 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Введите трех значное число");
-            var num = int.Parse(Console.ReadLine());
+            var threeDigitNumber = int.Parse(Console.ReadLine());
 
-            int answer = Logic.Compare(num);
+            int answer = Logic.Compare(threeDigitNumber);
 
             Console.WriteLine(answer);
             
