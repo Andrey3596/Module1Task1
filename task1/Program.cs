@@ -34,7 +34,7 @@ namespace task1
             Console.WriteLine("Введите трех значное число");
             var threeDigitNumber = int.Parse(Console.ReadLine());
 
-            int answer = Logic.Compare(threeDigitNumber);
+            int answer = Logic.CompareDigit(threeDigitNumber);
 
             Console.WriteLine(answer);
             
